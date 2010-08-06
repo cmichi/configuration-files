@@ -25,6 +25,7 @@ alias py="python3"
 alias gcc="gcc -Wall -std=c99 "
 alias a="./a.out"
 alias ls="ls -G -C" 						# -G for output in rows, -C for colors 
+alias mv="mv -i"						# question before overriding
 alias tracer="traceroute"
 alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'" 
 alias allrwx="find . -exec chmod u=rwx,g=rwx,o=rwx {} \;" 	# give all files in this dir full rights
