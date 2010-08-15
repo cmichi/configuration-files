@@ -1,0 +1,6 @@
+README
+======
+
+These are some of the config files I use.
+
+To continuously add .gitignore to your gitconfig execute "git config --global core.excludesfile ~/.gitignore"
