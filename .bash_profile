@@ -32,6 +32,7 @@ alias allrwx="find . -exec chmod u=rwx,g=rwx,o=rwx {} \;" 	# give all files in t
 alias mirror="wget -m -k -K -E " 				# mirror a website into the current dir
 alias sha1="/usr/bin/openssl sha1" 				# print sha-1 hash of the file specified
 alias log="history | tail -25"					# displays the last 25 commands in the history
+alias findhere="find ./ -name"
 
 
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'" # Get readable list of network IPs
