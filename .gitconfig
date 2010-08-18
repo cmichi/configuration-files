@@ -1,0 +1,14 @@
+[user]
+	name = cMichi 
+	email = mich@elmueller.net 
+[merge]
+	tool = vimdiff
+[core]
+	editor = vim
+	excludesfile = /Users/michi/.gitignore
+[color]
+	diff = true
+	ui = true
+[alias]
+	unstage = rm --cached  
+	ca = commit -a -m
