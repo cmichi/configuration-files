@@ -11,7 +11,7 @@ alias gowd='cd "`pbpaste`"'
 
 
 # makes a dir and cd's into the new dir
-function mk {
+function mkcd {
 	mkdir $1
 	cd $1
 }
@@ -26,11 +26,13 @@ alias gcc="gcc -Wall -std=c99 "
 alias a="./a.out"
 alias ls="ls -G -C" 						# -G for output in rows, -C for colors 
 alias mv="mv -i"						# question before overriding
+alias cp="cp -i"						# question before overriding
 alias tracer="traceroute"
 alias allrwx="find . -exec chmod u=rwx,g=rwx,o=rwx {} \;" 	# give all files in this dir full rights
 alias mirror="wget -m -k -K -E " 				# mirror a website into the current dir
 alias sha1="/usr/bin/openssl sha1" 				# print sha-1 hash of the file specified
 alias log="history | tail -25"					# displays the last 25 commands in the history
+alias findhere="find ./ -name"
 
 alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'" 
 alias amend="git commit --amend"
