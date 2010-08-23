@@ -15,6 +15,7 @@ alias mv="mv -i"											# question before overriding
 alias cp="cp -i"											# question before overriding
 alias findhere="find ./ -name"
 alias findroot="find / -name"
+alias printall="find ./ -type f -exec echo {} \;"
 
 alias sha1="/usr/bin/openssl sha1" 							# print sha-1 hash of the file specified
 alias log="history | tail -25"								# displays the last 25 commands in the history
@@ -29,7 +30,7 @@ alias ql="qlmanage -p 2>/dev/null" 							# preview a file using QuickLook
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'" # Get readable list of network IPs
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ping="ping -c 5" 													# ping 5 times ‘by default’
-alias tracer="traceroute"
+alias trace="traceroute"
 
 
 ###################### git ###################################
