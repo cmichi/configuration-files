@@ -8,7 +8,7 @@ alias pdp="cd /Users/michi/uni/ss10/paradigmen/"
 alias gdg="cd /Users/michi/Documents/Processing/AllTogether/"
 alias krypto="cd /Users/michi/uni/ss10/Krypto/"
 alias proj="cd ~/projects/"
-alias latex="cd ~/projects/latex/"
+alias tex="cd ~/projects/latex/"
 alias pyp="cd ~/projects/py/"
 alias htd="cd /Applications/MAMP/htdocs/"
 

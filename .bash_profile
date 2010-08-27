@@ -1,6 +1,9 @@
 export PATH=/Applications/MAMP/bin/php5/bin:/Developer/usr/bin:/opt/local/bin:/usr/bin/:$PATH
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 
+export HISTCONTROL=ignoreboth  # ignorespace & ignoredubs
+export HISTSIZE=5000
+
 
 alias ..="cd .."
 alias ...="cd .. ; cd .."
