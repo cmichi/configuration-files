@@ -34,5 +34,6 @@ Thumbs.db
 *.synctex.gz
 
 
-.bash_private
+*.bash_private
+
 
