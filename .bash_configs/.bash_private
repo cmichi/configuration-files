@@ -1,6 +1,6 @@
 # just some shortcuts to dirs
 alias cake="../../Applications/MAMP/htdocs/cakephp/cake/console/cake"
-alias htdocs="cd ../../Applications/MAMP/htdocs/"
+alias htdocs="cd /Users/michi/Applications/MAMP/htdocs/"
 alias creal="cd /Users/michi/cReal/"
 alias uulm="cd /Users/michi/uni/ss10/"
 alias uni="cd /Users/michi/uni/ss10/"
