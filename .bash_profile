@@ -64,6 +64,6 @@ set -o vi
 
 
 ###################### more configs ###################################
-source ~/.bash_configs/.bash_private			# ssh etc
-source ~/.bash_configs/.bash_ps1				# preferences for the prompt
+source ~/.bash_configs/.bash_machine_specific		# different things for my different working machines 
+source ~/.bash_configs/.bash_ps1			# preferences for the prompt
 source ~/.bash_configs/.bash_welcomemsg			# say hello :)
