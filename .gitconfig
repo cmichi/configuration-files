@@ -12,3 +12,5 @@
 [alias]
 	unstage = rm --cached  
 	ca = commit -a -m
+	ci = commit 
+	st = status
