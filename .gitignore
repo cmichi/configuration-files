@@ -4,6 +4,7 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *.fseventsd
+*._*
 
 # Temporary editor files and swaps 
 *~
