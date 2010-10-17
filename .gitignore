@@ -3,6 +3,7 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+*.fseventsd
 
 # Temporary editor files and swaps 
 *~
@@ -33,7 +34,8 @@ Thumbs.db
 *.out
 *.synctex.gz
 
+# Directories
+.Trash/
+.Trashes/
 
 *.bash_machine_specific
-
-
