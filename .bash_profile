@@ -24,6 +24,7 @@ alias sha1="/usr/bin/openssl sha1" 							# print sha-1 hash of the file specifi
 alias log="history | tail -25"								# displays the last 25 commands in the history
 alias rbash="source ~/.bash_profile"						# reloads bash config
 alias gzip="gzip -9n"				 						# set strongest compression level as ‘default’ for gzip
+alias pack="tar czvf "								# name.tar.gz ./folder/
 alias allrwx="find . -exec chmod u=rwx,g=rwx,o=rwx {} \;" 	# give all files in this dir full rights
 alias mirror="wget -m -k -K -E " 							# mirror a website into the current dir
 alias ql="qlmanage -p 2>/dev/null" 							# preview a file using QuickLook
