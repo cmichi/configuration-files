@@ -3,8 +3,11 @@
 ehthumbs.db
 Icon?
 Thumbs.db
-*.fseventsd
+.fseventsd/
+.VolumeIcon.icns
 *._*
+._.TemporaryItems/
+.TemporaryItems/
 
 # Temporary editor files and swaps 
 *~
