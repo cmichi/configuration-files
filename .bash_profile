@@ -2,7 +2,7 @@ export PATH=/Applications/MAMP/bin/php5/bin:/Developer/usr/bin:/opt/local/bin:/u
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 
 export HISTCONTROL=ignoreboth  # ignorespace & ignoredubs
-export HISTSIZE=5000
+export HISTSIZE=50000
 
 
 alias ..="cd .."
@@ -31,6 +31,8 @@ alias sha1="/usr/bin/openssl sha1" 							# print sha-1 hash of the file specifi
 alias log="history | tail -25"								# displays the last 25 commands in the history
 alias rbash="source ~/.bash_profile"						# reloads bash config
 alias gzip="gzip -9n"				 						# set strongest compression level as ‘default’ for gzip
+alias pack="tar czvf "								# name.tar.gz ./folder/
+alias unpack="tar -xf"
 alias allrwx="find . -exec chmod u=rwx,g=rwx,o=rwx {} \;" 	# give all files in this dir full rights
 alias mirror="wget -m -k -K -E " 							# mirror a website into the current dir
 alias ql="qlmanage -p 2>/dev/null" 							# preview a file using QuickLook
