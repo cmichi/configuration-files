@@ -23,6 +23,10 @@ alias findhere="find ./ -name"
 alias findroot="find / -name"
 alias printall="find ./ -type f -exec echo {} \;"
 
+alias nomoresvn="find .svn/ -exec rm -rf {} \;"	# sanatized dir from .svn
+alias cloc="~/cloc-1.52.pl"			# count lines of code, comments, etc
+
+
 alias sha1="/usr/bin/openssl sha1" 							# print sha-1 hash of the file specified
 alias log="history | tail -25"								# displays the last 25 commands in the history
 alias rbash="source ~/.bash_profile"						# reloads bash config
