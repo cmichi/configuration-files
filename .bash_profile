@@ -1,4 +1,4 @@
-export PATH=/Applications/MAMP/bin/php5/bin:/Developer/usr/bin:/opt/local/bin:/usr/bin/:$PATH
+export PATH=/Applications/MAMP/bin/php5/bin:/Developer/usr/bin:/opt/local/bin:/usr/bin/:~/.bash_configs/bin/:$PATH
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 
 export HISTCONTROL=ignoreboth  # ignorespace & ignoredubs
@@ -23,8 +23,8 @@ alias findhere="find ./ -name"
 alias findroot="find / -name"
 alias printall="find ./ -type f -exec echo {} \;"
 
-alias nomoresvn="find .svn/ -exec rm -rf {} \;"	# sanatized dir from .svn
-alias cloc="~/cloc-1.52.pl"			# count lines of code, comments, etc
+alias nomoresvn="find .svn/ -exec rm -rf {} \; findhere .svn -exec rm -rf {} \;"	# sanatized dir from .svn
+alias cloc="cloc-1.52.pl"	# count lines of code, comments, etc
 
 
 alias sha1="/usr/bin/openssl sha1" 		# print sha-1 hash of the file specified
