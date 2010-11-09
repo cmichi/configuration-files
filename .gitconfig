@@ -14,3 +14,5 @@
 	ca = commit -a -m
 	ci = commit 
 	st = status
+[push]
+	default = tracking
