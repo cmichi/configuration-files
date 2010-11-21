@@ -14,6 +14,7 @@ alias finder="open ."
 alias cls="clear"
 alias py="python3"
 alias gcc="gcc -Wall -std=c99 "
+alias gcc-orig="gcc"
 alias a="./a.out"
 alias ls="ls -G -C" 				# -G for output in rows, -C for colors 
 alias mv="mv -i"				# question before overriding
