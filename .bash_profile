@@ -47,7 +47,7 @@ alias trace="traceroute"
 
 
 ###################### git ###################################
-alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'" 
+alias gitlog="git log --pretty=format:'%h - %an, %ar : %s' | head" 
 alias amend="git commit --amend"
 
 
