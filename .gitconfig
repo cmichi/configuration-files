@@ -14,5 +14,6 @@
 	ca = commit -a -m
 	ci = commit 
 	st = status
+	lg = log --pretty=format:'%h - %an, %ar : %s'
 [push]
 	default = tracking
