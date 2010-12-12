@@ -70,7 +70,7 @@ bash_prompt() {
     local BGW="\[\033[47m\]"
     
     
-    PS1="${EMG}\u ${EMB}\${NEW_PWD} \\$ ${NONE}"
+    PS1="${EMR}\u ${EMB}\${NEW_PWD} \\$ ${NONE}"
     # without colors: PS1="[\u@\h \${NEW_PWD}]\\$ "
     # extra backslash in front of \$ to make bash colorize the prompt
 }
