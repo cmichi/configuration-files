@@ -14,9 +14,11 @@ alias finder="open ."
 alias cls="clear"
 alias py="python3"
 alias gcc="gcc -Wall -std=c99 "
-alias gcc-orig="gcc"
+alias gccorig="gcc"
+alias manage="python manage.py"			# Django development
 alias a="./a.out"
 alias ls="ls -G -C" 				# -G for output in rows, -C for colors 
+alias lls="ls"
 alias mv="mv -i"				# question before overriding
 alias cp="cp -i"				# question before overriding
 alias mk="mkdir"				
@@ -47,7 +49,7 @@ alias trace="traceroute"
 
 
 ###################### git ###################################
-alias gitlog="git log --pretty=format:'%h - %an, %ar : %s' | head" 
+alias gitlog="git log --pretty=format:'%h - %an, %ar : %s' | head; echo ''" 
 alias amend="git commit --amend"
 
 
