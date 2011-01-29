@@ -1,4 +1,4 @@
-export PATH=/Applications/MAMP/bin/php5/bin:/Developer/usr/bin:/opt/local/bin:/usr/bin/:~/.bash_configs/bin/:$PATH
+export PATH=/Applications/MAMP/bin/php5/bin:/Developer/usr/bin:/opt/local/bin:/usr/bin/:~/.bash_configs/bin/:/usr/local/git/bin/git-upload-pack:$PATH
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 
 export HISTCONTROL=ignoreboth  # ignorespace & ignoredubs
