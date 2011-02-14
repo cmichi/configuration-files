@@ -42,4 +42,7 @@ Thumbs.db
 .Trash/
 .Trashes/
 
+# Eclipse Workspace Metadata
+#.metadata/*
+
 *.bash_machine_specific
