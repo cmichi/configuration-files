@@ -1108,7 +1108,8 @@ fi
 
 # gather version control information for inclusion in a prompt {{{
 
-if ! is41 ; then
+# disable version control info about git, etc. in PS1
+#if ! is41 ; then
     # Be quiet about version problems in grml's zshrc as the user cannot disable
     # loading vcs_info() as it is *in* the zshrc - as you can see. :-)
     # Just unset most probable variables and disable vcs_info altogether.
@@ -1117,7 +1118,7 @@ if ! is41 ; then
         unset VCS_INFO_message_${i}_
     done
     zstyle ':vcs_info:*' enable false
-fi
+#fi
 
 # The following code is imported from the file 'zsh/functions/vcs_info'
 # from <http://ft.bewatermyfriend.org/comp/zsh/zsh-dotfiles.tar.bz2>,
