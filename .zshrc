@@ -4449,6 +4449,10 @@ fi
 
 zrclocal
 
+
+source ~/.zsh_configs/aliases
+source ~/.zsh_configs/machine_specific
+
 ## genrefcard.pl settings {{{
 
 ### doc strings for external functions from files
@@ -4458,6 +4462,7 @@ zrclocal
 #@# split functions-search 8
 
 ## }}}
+
 
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
