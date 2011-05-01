@@ -4,6 +4,10 @@ set fileencoding=utf-8
 set number
 set comments-=:--
 
+" set match ErrorMsg '\%>80v.\+'
+set columns=80
+"set textwidth=80
+
 " no stair effects after pasting code 
 set pastetoggle=<F8>
 
@@ -24,7 +28,7 @@ set backspace=indent,eol,start
 " else
   " set backup		" keep a backup file
 " endif
-set history=50		" keep 50 lines of command line history
+set history=99999	" keep x lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching

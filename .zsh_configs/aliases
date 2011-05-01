@@ -4,6 +4,7 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 export HISTCONTROL=ignoreboth  # ignorespace & ignoredubs
 export HISTSIZE=50000
 
+export eclipse="/Applications/eclipse/eclipse"
 
 alias ....="cd .. ; cd ..; cd .."
 alias .....="cd ..; cd .. ; cd ..; cd .."
@@ -12,7 +13,7 @@ alias finder="open ."
 alias cls="clear"
 alias py="python3"
 alias gcc="gcc -Wall -std=c99 "
-alias gccorig="gcc"
+alias gccc="gcc"				# original gcc
 alias manage="python manage.py"			# Django development
 alias a="./a.out"
 alias ls="ls -G -C" 				# -G for output in rows, -C for colors 
@@ -28,6 +29,7 @@ alias empty="echo > "
 
 alias nomoresvn="find .svn/ -exec rm -rf {} \; findhere .svn -exec rm -rf {} \;"	# sanatized dir from .svn
 alias cloc="cloc-1.52.pl"	# count lines of code, comments, etc
+alias base64="python -c 'import base64, sys; print base64.b64decode(sys.argv[1])'"
 
 alias sha1="/usr/bin/openssl sha1" 		# print sha-1 hash of the file specified
 alias log="history | tail -25"			# displays the last 25 commands in the history
