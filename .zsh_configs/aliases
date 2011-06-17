@@ -28,6 +28,8 @@ alias printall="find ./ -type f -exec echo {} \;"
 alias empty="echo > "
 
 alias nomoresvn="find .svn/ -exec rm -rf {} \; findhere .svn -exec rm -rf {} \;"	# sanatized dir from .svn
+alias no_nls="tr '\n' ' '" # no new lines
+alias sanatize="find . -name *DS_Store -exec rm {} \;"
 alias cloc="cloc-1.52.pl"	# count lines of code, comments, etc
 alias base64="python -c 'import base64, sys; print base64.b64decode(sys.argv[1])'"
 
