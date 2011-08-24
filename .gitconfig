@@ -1,6 +1,6 @@
 [user]
-	name = michm 
-	email = mich@elmueller.net 
+	name = cmichi
+	email = mich@elmueller.net
 [merge]
 	tool = vimdiff
 [core]

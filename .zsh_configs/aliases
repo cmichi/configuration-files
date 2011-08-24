@@ -1,4 +1,5 @@
-export PATH=/Applications/MAMP/bin/php5/bin:/Developer/usr/bin:/opt/local/bin:/usr/bin/:~/.bash_configs/bin/:/usr/local/git/bin/git-upload-pack:~/fop/:~/.cabal/bin:$PATH
+$PP_OFF #GWT
+export PATH=/Applications/MAMP/bin/php5/bin:/Developer/usr/bin:/opt/local/bin:/usr/bin/:~/.bash_configs/bin/:/usr/local/git/bin/git-upload-pack:~/fop/:~/.cabal/bin:/Applications/Editoren/Processing.app/Contents/Resources/Java/modes/java/libraries/opengl/library:/home/michi/gwt-2.3.0/:/Applications/Editoren/Processing.app/Contents/Resources/Java/modes/java/libraries/opengl/library/macosx:$PATH
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 
 export HISTCONTROL=ignoreboth  # ignorespace & ignoredubs
@@ -31,6 +32,7 @@ alias nomoresvn="find .svn/ -exec rm -rf {} \; findhere .svn -exec rm -rf {} \;"
 alias no_nls="tr '\n' ' '" # no new lines
 alias sanatize="find . -name *DS_Store -exec rm {} \;"
 alias cloc="cloc-1.52.pl"	# count lines of code, comments, etc
+alias findcnt="~/.zsh_configs/bin/find-content.sh"	# find terms in content
 alias base64="python -c 'import base64, sys; print base64.b64decode(sys.argv[1])'"
 
 alias sha1="/usr/bin/openssl sha1" 		# print sha-1 hash of the file specified
@@ -42,7 +44,9 @@ alias unpack="tar -xf"
 alias allrwx="find . -exec chmod u=rwx,g=rwx,o=rwx {} \;" 	# give all files in this dir full rights
 alias mirror="wget -m -k -K -E " 				# mirror a website into the current dir
 alias ql="qlmanage -p 2>/dev/null" 				# preview a file using QuickLook
+alias fjson="python -mjson.tool"
 
+alias inhistory="cat ~/.bash_history ~/.zsh_history | grep "
 
 ###################### networking ###################################
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'" # Get readable list of network IPs
