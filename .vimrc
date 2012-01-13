@@ -97,5 +97,13 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/
+
+" cursor fadenkreuz
+" set cursorline cursorcolumn
+" hi CursorLine cterm=NONE ctermbg=darkmagenta
+" hi CursorColumn cterm=NONE ctermbg=darkmagenta
+" " autocmd WinLeave * set nocursorline nocursorcolumn
+"autocmd WinEnter * set cursorline cursorcolumn
+
