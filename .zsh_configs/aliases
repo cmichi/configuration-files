@@ -47,7 +47,6 @@ alias ql="qlmanage -p 2>/dev/null" 				# preview a file using QuickLook
 alias fjson="python -mjson.tool"
 
 alias inhistory="cat ~/.bash_history ~/.zsh_history | grep "
-alias inalias="cat ~/.zsh_configs/aliases | grep $1"
 
 ###################### networking ###################################
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'" # Get readable list of network IPs

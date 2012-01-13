@@ -5,7 +5,7 @@
 	tool = vimdiff
 [core]
 	editor = vim
-	excludesfile = /Users/michi/.gitignore
+	excludesfile = /home/michi/.gitignore
 [color]
 	diff = true
 	ui = true
