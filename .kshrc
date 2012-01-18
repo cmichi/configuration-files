@@ -2,7 +2,6 @@ PKG_PATH=ftp://ftp.fr.openbsd.org/pub/OpenBSD/snapshots/packages/i386/
 
 [[ $TERM != "screen" ]] && tmux -2 #&& exit
 
-alias m="mplayer"
 alias l="ls -l"
 alias ll="ls -a"
 alias p="pwd"
@@ -13,6 +12,8 @@ alias ...="..; .."
 alias ....="..; ..; ..;"
 
 alias py="python3"
+alias m="mplayer"
+alias ff="firefox &"
 alias gcc="gcc -Wall -std=c99 "
 alias gccc="gcc"                                # original gcc
 alias a="./a.out"
