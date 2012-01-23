@@ -1,10 +1,9 @@
 [user]
 	name = cmichi
-	email = mich@elmueller.net
 [merge]
 	tool = vimdiff
 [core]
-	editor = vim
+	editor = vi
 	excludesfile = /home/michi/.gitignore
 [color]
 	diff = true
