@@ -1,0 +1,6 @@
+set defsearch=duckduckgo
+set gui=none
+
+# jump to last opened tab
+map! vo :buffer #<CR>
+
