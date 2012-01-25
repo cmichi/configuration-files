@@ -5,6 +5,7 @@ PKG_PATH=ftp://ftp.fr.openbsd.org/pub/OpenBSD/snapshots/packages/i386/
 alias l="ls"
 alias ll="ls -l"
 alias la="ls -a"
+alias lla="ls -al"
 alias lh="ls -lh"
 
 alias p="pwd"
@@ -60,4 +61,4 @@ alias a="./a.out"
 
 set -o vi
 export HISTSIZE=9999
-
+export HISTFILE=$HOME/.history
