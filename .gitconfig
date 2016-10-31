@@ -16,3 +16,5 @@
 	lg = log --pretty=format:'%h - %an, %ar : %s'
 [push]
 	default = tracking
+[http]
+	sslVerify = false

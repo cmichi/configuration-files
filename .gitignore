@@ -17,7 +17,7 @@ Thumbs.db
 *.aux
 *.glo
 *.idx
-*.log
+#*.log
 *.toc
 *.ist
 *.acn
