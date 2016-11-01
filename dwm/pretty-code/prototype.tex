@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{listings}             % Include the listings-package
+%\setlength{\topmargin}{1cm}
+\usepackage[left=3.5cm,right=1cm,top=0.0cm,bottom=1.2cm,includeheadfoot]{geometry}
+\usepackage{verbatim}
+
+\begin{document}
+
+	\hfill\texttt{config.h}
+
+	\lstinputlisting[
+		basicstyle=\footnotesize,
+		tabsize=3,
+		numbersep=5pt     
+		firstline=1
+	]{./config.h}
+
+	\newpage
+
+	\hfill\texttt{dwm.c}
+
+	\lstinputlisting[
+		basicstyle=\footnotesize,
+		tabsize=3,
+		numbersep=5pt     
+		firstline=1
+	]{./dwm.c}
+
+
+\end{document}
