@@ -1,0 +1,38 @@
+xlogin*fail: Login incorrect or forbidden by policy
+
+#xlogin*greetFont: -adobe-helvetica-bold-o-normal--24-240-75-75-p-138-iso8859-1
+#xlogin*font: -adobe-helvetica-medium-r-normal--18-180-75-75-p-98-iso8859-1
+#xlogin*promptFont: -adobe-helvetica-bold-r-normal--18-180-75-75-p-103-iso8859-1
+#xlogin*failFont: -adobe-helvetica-bold-r-normal--18-180-75-75-p-103-iso8859-1
+
+#xlogin*greetFace:	Serif-24:bold:italic
+#xlogin*face: 		Helvetica-18
+#xlogin*promptFace: 	Helvetica-18:bold
+#xlogin*failFace: 	Helvetica-18:bold
+
+xlogin*face: 		Ubuntu-Mono-18
+#xlogin*font: -adobe-helvetica-medium-r-normal--18-180-75-75-p-98-iso8859-1
+
+xlogin*borderWidth: 0
+xlogin*frameWidth: 0
+xlogin*innerFramesWidth: 0
+
+xlogin.Login.echoPasswd: true
+
+Xlogin*titleMessage: 
+xlogin*greeting: 
+
+# fix to make the name label of the same with as the passwd label
+xlogin*namePrompt: Password:
+# this is somehow not recognized:
+xlogin*passwdPrompt: 
+
+xlogin*sepWidth: 0
+
+xlogin*geometry: 500x250+375+150
+
+xlogin*foreground: #addaed
+
+xlogin*background: #091720
+xlogin*greetColor:  #091720
+xlogin*promptColor: #091720
