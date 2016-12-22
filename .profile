@@ -31,6 +31,11 @@ function mkcd {
 	cd $1
 }
 
+function cdl {
+	cd $1
+	ls -h $1
+}
+
 alias base64="openssl enc -d -base64"
 
 # gcc
@@ -43,3 +48,8 @@ export HISTFILE=$HOME/.history
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
+
+bind -x '"^X"':"fg" # CTRL+X
+
+shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
