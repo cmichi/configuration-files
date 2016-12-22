@@ -56,8 +56,26 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb
 static const char *xboomxcmd[] = { "xboomx", NULL };
 static const char *termcmd[]  = { "uxterm", NULL };
 
+/* german umlaut bindings */
+static const char umlaute[]    = "/home/michi/dwm/umlaute.sh";
+static const char *insertAe[]  = { umlaute, "A", NULL };
+static const char *insertae[]  = { umlaute, "a", NULL };
+static const char *insertOe[]  = { umlaute, "O", NULL };
+static const char *insertoe[]  = { umlaute, "o", NULL };
+static const char *insertUe[]  = { umlaute, "U", NULL };
+static const char *insertue[]  = { umlaute, "u", NULL };
+static const char *insertsz[]  = { umlaute, "s", NULL };
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = insertAe } },
+	{ MODKEY,                       XK_a,      spawn,          {.v = insertae } },
+	{ MODKEY|ShiftMask,             XK_o,      spawn,          {.v = insertOe } },
+	{ MODKEY,                       XK_o,      spawn,          {.v = insertoe } },
+	{ MODKEY|ShiftMask,             XK_u,      spawn,          {.v = insertUe } },
+	{ MODKEY,                       XK_u,      spawn,          {.v = insertue } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = insertsz } },
+
 	{ MODKEY,                       XK_p,      spawn,          {.v = xboomxcmd } },
 	//{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
