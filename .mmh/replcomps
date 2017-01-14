@@ -1,0 +1,38 @@
+%; $Header$
+%;
+%; These next lines slurp in lots of addresses for To: and Cc:.
+%; Use with repl -query or else you may get flooded with addresses!
+%;
+%; If no To:/Cc:/Fcc: text, we output empty fields for prompter to fill in.
+%;
+%(lit)%(formataddr{reply-to})\
+%(formataddr %<{from}%(void{from})%|%(void{apparently-from})%>)\
+%(formataddr{resent-to})\
+%(formataddr{prev-resent-to})\
+%(formataddr{x-to})\
+%(formataddr{apparently-to})\
+%(void(width))%(putaddr To: )
+%(lit)%(formataddr{to})\
+%(formataddr{cc})\
+%(formataddr{x-cc})\
+%(formataddr{resent-cc})\
+%(formataddr{prev-resent-cc})\
+%(formataddr(me))\
+%(void(width))%(putaddr Cc: )
+From:
+Fcc: +sent
+Subject: %<{subject}Re: %(void{subject})%(trim)%(putstr)%>
+%;
+%; Make References: and In-reply-to: fields for threading.
+%; Use (void), (trim) and (putstr) to eat trailing whitespace.
+%;
+%<{message-id}In-reply-to: %{message-id}\n%>\
+%<{message-id}References: \
+%<{references}%(void{references})%(trim)%(putstr) %>\
+%(void{message-id})%(trim)%(putstr)\n%>\
+Comments: In-reply-to \
+%<{from}%(void{from})%?(void{apparently-from})%|%(void{sender})%>\
+%(trim)%(putstr)\n\
+   message dated "%<(nodate{date})%{date}%|%(tws{date})%>."
+User-Agent: mmh 0.0
+--------
